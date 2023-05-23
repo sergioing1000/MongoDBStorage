@@ -2,9 +2,8 @@ import { MongoClient } from "mongodb";
 import { config } from "dotenv";
 
 config();
-
+  
 const uri = process.env.URI_MONGODB;
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -187,7 +186,7 @@ async function deleteDocument(documentId) {
 
 //run_insert().catch(console.dir);
 //run_insertMany().catch(console.dir);
-//getDocumentCount();
+getDocumentCount();
 //getDocuments();
 //getDocumentByParameter({name: "Jabón"});
 //deleteDocument({ _id: 2 });
@@ -200,5 +199,5 @@ async function deleteDocument(documentId) {
 
 ////////////////////////////////////////////////////////////
 
-let documentQty = getDocumentCount();
-console.log(documentQty);
+// let documentQty = getDocumentCount();
+// console.log(documentQty);
