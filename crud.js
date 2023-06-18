@@ -6,6 +6,7 @@ config();
 const uri = process.env.URI_MONGODB;
 const client = new MongoClient(uri);
 
+console.log(uri);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,7 +100,7 @@ async function getDocumentCount() {
     // Print the result
     console.log(`Number of documents in the collection Products is: ${count}`);
   } catch (err) {
-    console.error('Error:', err);
+    console.error('Error:', err);    
   } finally {
     // Close the MongoDB connection
     await client.close();

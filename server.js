@@ -5,7 +5,7 @@ app.use(express.static('.'));
 
 const port = 3000; // Specify the desired port number
 
-console.log(process.env.PORT || 8082);
+console.log(process.env.PORT || 3000);
 
 
 app.listen(port, () => {
