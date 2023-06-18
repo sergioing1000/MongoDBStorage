@@ -1,15 +1,17 @@
-import { MongoClient } from "mongodb";
+import { MongoClient } from 'mongodb';
 import { config } from "dotenv";
 
 config();
   
 const uri = process.env.URI_MONGODB;
+const client = new MongoClient(uri);
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Crear una instancia del objeto Mongo CLiente
-const client = new MongoClient(uri);
+
+
 
 //**************************************************************************************** */
 //**************************************************************************************** */
@@ -17,6 +19,14 @@ const client = new MongoClient(uri);
 //**************************************************************************************** */
 
 //This async function inserts a new document into the 'users' collection in the 'USUARIOS' database.
+
+console.log("prueba");
+
+console.log("prueba");
+console.log("prueba");
+console.log("prueba");
+
+
 
 async function run_insert() {
   try {
